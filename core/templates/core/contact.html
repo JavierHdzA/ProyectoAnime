@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+</head>
+
+<body>
+
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="{% url 'home'%}">Christian David Mendez Reynoso</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{% url 'home'%}">Home</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{% url 'about'%}">Acerca de</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{% url 'portada'%}">Portada</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{% url 'contact'%}">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{% url 'portfolio'%}">Portafolio</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    {% block content %}
+    <h2>Contacto</h2>
+    <p>Aquí os dejo mi email y mis redes sociales:</p>
+
+    <ul>
+        <li><a href="mailto:hola@hektorprofe.net">Email</a></li>
+        <li><a href="https://github.com/hcosta">Github</a></li>
+        <li><a href="https://youtube.com">Youtube</a></li>
+    </ul>
+{% endblock %}
+
+<img src="https://i.pinimg.com/originals/1d/0f/5b/1d0f5bfc52440737ec92d3bf4332abd4.jpg">
+
+
+    
+</body>
+</html>

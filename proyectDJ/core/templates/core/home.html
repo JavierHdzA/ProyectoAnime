@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <link rel="icon" href="{% static 'core/icon/icono.png' %}" >
+    <meta charset="UTF-8">g
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOP FRIKONLINE</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Links de los folios css link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+  <!-- Core theme CSS (includes Bootstrap)-->
+  {% load static %}
+  <link href="{% static 'core/css/style.css' %}"rel="stylesheet">
+  <link href="{% static 'core/css/home.css' %}"rel="stylesheet">
+        <!-- custom css file link  -->
+
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+
+<script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<body>
+    
+<!-- header section starts  -->
+<body>
+    <body>
+        <div class="scroll-up-btn">
+            <i class="fas fa-angle-up"></i>
+        </div>
+        <nav class="navbar">
+            <div class="max-width">
+                <div class="logo"><a href="{% url 'home'%}" >SHOP<span>FRIKONLINE.</span></a></div>
+                <ul class="menu">
+                    
+                    <li><a href="{% url 'home'%}" class="menu-btn">Home</a></li>
+                    <li><a href="{% url 'acerca'%}"class="menu-btn">Acerca</a></li>
+                    <li><a href="{% url 'categoria'%}" class="menu-btn">categoria</a></li>
+                    <li><a href="{% url 'tienda'%}" class="menu-btn">Tienda</a></li>
+                    <li><a href="{% url 'contacto'%}" class="menu-btn">Contacto</a></li>
+
+                </ul>
+                <div class="menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    
+        <script src="script.js"></script>
+    </body>
+
+<!-- home section ends -->
+
+
+
+<!-- CONTENIDO -->
+
+<body>
+    
+    <!-- login form container  -->
+    
+    <div class="login-form-container">
+    
+        <i class="fas fa-times" id="form-close"></i>
+    
+        <form action="">
+            <h3>login</h3>
+            <input type="email" class="box" placeholder="enter your email">
+            <input type="password" class="box" placeholder="enter your password">
+            <input type="submit" value="login now" class="btn">
+            <input type="checkbox" id="remember">
+            <label for="remember">remember me</label>
+            <p>forget password? <a href="#">click here</a></p>
+            <p>don't have and account? <a href="#">register now</a></p>
+        </form>
+    
+    </div>
+    
+    <!-- home section starts  -->
+    
+    <section class="home" id="home">
+    
+        <div class="content">
+            <h3>Disfruta de las aventuras de frikonline</h3>
+            <p>aqui econtraras diferentes contenidos</p>
+            <a href="#" class="btn">mas contenidos</a>
+        </div>
+    
+        <div class="controls">
+            <div class="video-container">
+            <span class="vid-btn active" data-src="{% static 'core/video/intro2.mp4' %}"></span>
+            <span class="vid-btn" data-src="images/vid-2.mp4"></span>
+            <span class="vid-btn" data-src="images/vid-3.mp4"></span>
+            <span class="vid-btn" data-src="images/vid-4.mp4"></span>
+            <span class="vid-btn" data-src="images/vid-5.mp4"></span>
+        </div>
+        </div>
+        
+        <div class="video-container">
+            <video src="{% static 'core/video/intro.mp4' %}" id="video-slider" loop autoplay muted></video>
+        </div>
+    
+    </section>
+    
+    <!-- home section ends -->
+
+    
+    
+    <!-- packages section starts  -->
+    
+    <section class="packages" id="packages">
+    
+        <h1 class="heading">
+            <span>o</span>
+            <span>f</span>
+            <span>e</span>
+            <span>r</span>
+            <span>t</span>
+            <span>a</span>
+            <span>s</span>
+        </h1>
+    
+        <div class="box-container">
+    
+            <div class="box">
+                <img src="{% static 'core/img/img-1.jpg' %}" alt="">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> edomex-cuatitlan </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price"> $499.99 <span>$500.00</span> </div>
+                    <a href="#" class="btn">compra</a>
+                </div>
+            </div>
+    
+            <div class="box">
+                <img src="{% static 'core/img/img-2.jpg' %}" alt="">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> edomex-cuatitlan </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price"> $190.99 <span>$280.00</span> </div>
+                    <a href="#" class="btn">compra</a>
+                </div>
+            </div>
+    
+            <div class="box">
+                <img src="{% static 'core/img/img-3.jpg' %}" alt="">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> edomex-cuatitlan </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price"> $259.99 <span>$300.00</span> </div>
+                    <a href="#" class="btn">compra</a>
+                </div>
+            </div>
+    
+            <div class="box">
+                <img src="{% static 'core/img/img-4.jpg' %}" alt="">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> pueblamex-tecamachalco </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price"> $99.99 <span>$150.00</span> </div>
+                    <a href="#" class="btn">compra</a>
+                </div>
+            </div>
+    
+            <div class="box">
+                <img src="{% static 'core/img/img-5.jpg' %}" alt="">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> pueblamex-tecamachalco </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price"> $90.00 <span>$120.00</span> </div>
+                    <a href="#" class="btn">compra</a>
+                </div>
+            </div>
+    
+            <div class="box">
+                <img src="{% static 'core/img/img-6.jpg' %}" alt="">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> pueblamex-tecamachalco </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price"> $90.00 <span>$120.00</span> </div>
+                    <a href="#" class="btn">compra</a>
+                </div>
+            </div>
+    
+        </div>
+    
+    </section>
+    
+    <!-- packages section ends -->
+    
+    <!-- services section starts  -->
+    
+    <section class="services" id="services">
+    
+        <h1 class="heading">
+            <span>s</span>
+            <span>e</span>
+            <span>r</span>
+            <span>v</span>
+            <span>i</span>
+            <span>c</span>
+            <span>i</span>
+            <span>o</span>
+            <span>s</span>
+        </h1>
+    
+        <div class="box-container">
+    
+            <div class="box">
+                <i class="fas fa-hotel"></i>
+                <h3>oficinas</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate exercitationem ut minima itaque iusto ipsum corrupti!</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-utensils"></i>
+                <h3>restautante</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate exercitationem ut minima itaque iusto ipsum corrupti!</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-bullhorn"></i>
+                <h3>musica</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate exercitationem ut minima itaque iusto ipsum corrupti!</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-globe-asia"></i>
+                <h3>mundo</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate exercitationem ut minima itaque iusto ipsum corrupti!</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-plane"></i>
+                <h3>viajes</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate exercitationem ut minima itaque iusto ipsum corrupti!</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-hiking"></i>
+                <h3>eventos</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate exercitationem ut minima itaque iusto ipsum corrupti!</p>
+            </div>
+    
+        </div>
+    
+    </section>
+    
+    <!-- services section ends -->
+    
+    <!-- gallery section starts  -->
+    
+    <section class="gallery" id="gallery">
+    
+        <h1 class="heading">
+            <span>g</span>
+            <span>a</span>
+            <span>l</span>
+            <span>l</span>
+            <span>e</span>
+            <span>r</span>
+            <span>y</span>
+        </h1>
+    
+        <div class="box-container">
+    
+            <div class="box">
+                <img src="{% static 'core/img/img/dragonball/1.jpg' %}" alt="">
+                <div class="content">
+                    <h3>Dragon ball</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                    <a href="#" class="btn">see more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="{% static 'core/img/img/zelda/1.jpg' %}" alt="">
+                <div class="content">
+                    <h3>zelda</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                    <a href="#" class="btn">see more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="{% static 'core/img/img/dannyphantom/1.jpg' %}" alt="">
+                <div class="content">
+                    <h3>danny phantom</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                    <a href="#" class="btn">see more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="{% static 'core/img/img/rapido-furiosos/1.jpg' %}" alt="">
+                <div class="content">
+                    <h3>rapido furiosos</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                    <a href="#" class="btn">see more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="{% static 'core/img/img/SmahsBros/1.jpg' %}" alt="">
+                <div class="content">
+                    <h3>smahs bros</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                    <a href="#" class="btn">see more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="{% static 'core/img/img/flash/1.jpg' %}" alt="">
+                <div class="content">
+                    <h3>flash</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                    <a href="#" class="btn">see more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="{% static 'core/img/img/halo/1.jpg' %}" alt="">
+                <div class="content">
+                    <h3>halo</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                    <a href="#" class="btn">see more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="{% static 'core/img/img/love-alarm/1.jpg' %}" alt="">
+                <div class="content">
+                    <h3>love alarm</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                    <a href="#" class="btn">see more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="{% static 'core/img/img/demonslayer/2.jpg' %}" alt="">
+                <div class="content">
+                    <h3>demon slayer</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                    <a href="#" class="btn">see more</a>
+                </div>
+            </div>
+    
+        </div>
+    
+    </section>
+    
+    <!-- productos section ends -->
+    
+    <!-- series section ends -->
+    <section class="gallery" id="gallery">
+    
+        <h1 class="heading">
+            <span>s</span>
+            <span>e</span>
+            <span>r</span>
+            <span>i</span>
+            <span>e</span>
+            <span>s</span>
+        </h1>
+    
+        <div class="box-container">
+    
+            <div class="box">
+                <img src="{% static 'core/img/img/dragonball/1.jpg' %}" alt="">
+                <div class="content">
+                    <h3>Dragon ball</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                    <a href="#" class="btn">see more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="{% static 'core/img/img/zelda/1.jpg' %}" alt="">
+                <div class="content">
+                    <h3>zelda</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                    <a href="#" class="btn">see more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="{% static 'core/img/img/dannyphantom/1.jpg' %}" alt="">
+                <div class="content">
+                    <h3>danny phantom</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                    <a href="#" class="btn">see more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="{% static 'core/img/img/rapido-furiosos/1.jpg' %}" alt="">
+                <div class="content">
+                    <h3>rapido furiosos</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                    <a href="#" class="btn">see more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="{% static 'core/img/img/SmahsBros/1.jpg' %}" alt="">
+                <div class="content">
+                    <h3>smahs bros</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                    <a href="#" class="btn">see more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="{% static 'core/img/img/flash/1.jpg' %}" alt="">
+                <div class="content">
+                    <h3>flash</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                    <a href="#" class="btn">see more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="{% static 'core/img/img/halo/1.jpg' %}" alt="">
+                <div class="content">
+                    <h3>halo</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                    <a href="#" class="btn">see more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="{% static 'core/img/img/love-alarm/1.jpg' %}" alt="">
+                <div class="content">
+                    <h3>love alarm</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                    <a href="#" class="btn">see more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="{% static 'core/img/img/demonslayer/2.jpg' %}" alt="">
+                <div class="content">
+                    <h3>demon slayer</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                    <a href="#" class="btn">see more</a>
+                </div>
+            </div>
+    
+        </div>
+    
+    </section>
+    
+    
+    
+    <!-- contact section ends -->
+    
+    <!-- brand section  -->
+    <section class="brand-container">
+    
+        <div class="swiper-container brand-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/1.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/2.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/3.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/4.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/5.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/6.jpg" alt=""></div>
+            </div>
+        </div>
+    
+    </section>
+    
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+    <!-- custom js file link  -->
+    <script src="app.js"></script>
+    
+    </body>
+    </html>
+
+
+   
+
+
+<!-- pie de pagina -->
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>COMPAÑIA</h4>
+                <ul>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">our services</a></li>
+                    <li><a href="#">privacy policy</a></li>
+                    <li><a href="#">affiliate program</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>AYUDA </h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">shipping</a></li>
+                    <li><a href="#">returns</a></li>
+                    <li><a href="#">order status</a></li>
+                    <li><a href="#">payment options</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>SERVICIOS</h4>
+                <ul>
+                    <li><a href="#">watch</a></li>
+                    <li><a href="#">bag</a></li>
+                    <li><a href="#">shoes</a></li>
+                    <li><a href="#">dress</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>REDES SOCIALES</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+  </footer>
+  <footer class="pie-pagina">
+    <div class="grupo-1">
+        <div class="box">
+        </div>
+    </div>
+    <div class="grupo-2">
+        <small>&copy; 2021 <b>SLee Dw</b> - Todos los Derechos Reservados.</small>
+    </div>
+  </footer>
+
+<!-- custom js file link  -->
+<script src="{% static 'core/script.js' %}"></script>
+
+</body>
+</html>
